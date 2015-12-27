@@ -28,7 +28,7 @@ $(function(){
             msgErrorButton.attr('hidden')
         }
 
-        url = url_api + '/' + stores.val() + '?warehouse=true';
+        url = url_api + '/' + stores.val()
         url += '&level=' + level.val()
 
         if (logName) {
