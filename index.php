@@ -34,8 +34,8 @@
 					<div class="form-group col-xs-7 col-md-3 col-sm-4">
 						<select name="stores" id="stores" class="form-control">
 							<option disabled selected> Choose Store</option>
-							<option value="continentalcenter">Continental Center</option>
-							<option value="elare">Elare</option>
+							<option value="store_value">Store 1</option>
+							<option value="store_value">Store 2</option>
 						</select>
 					</div>
 				</div>
