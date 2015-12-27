@@ -1,6 +1,6 @@
 $(function(){
 
-    var url_api = 'http://sandbox.moovinplataforma.com.br/logs/logs/notification/site';
+    var url_api = '';
     var auth_api = 'auth_here';
 
     var msgErrorButton = $('.msg-error');
