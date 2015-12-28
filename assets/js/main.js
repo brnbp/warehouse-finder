@@ -115,13 +115,22 @@ limit.keyup(function(){
     }
 })
 
-
+/**
+ * Ao clicar remove table existente com a ultima
+ * requisição feita pelo usuario, após isso,
+ * desabilita o botao até que a prox requisicao seja feita
+ */
 $("#clear-request").click(function(){
     $('.table-row > tr').remove()
     $("#logs").attr('hidden', true)
     $("#clear-request").attr('disabled', true)
 })
 
+/**
+ *Ao clicar em pesquisar, remove tabelas existentes
+ * e esconde todo conteudo da tabela padrao
+ * para poder gerar uma nova com a nova requisicao que sera feita
+ */
 $("#search").click(function(){
     $('.table-row > tr').remove()
     $("#logs").attr('hidden', true)
