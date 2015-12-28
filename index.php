@@ -11,7 +11,7 @@
     <link href="assets/js/selec2/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
-<div class="container col-md-offset-1 col-xs-offset-1 col-sm-offset-1">
+    <div class="container col-md-offset-1 col-xs-offset-1 col-sm-offset-1">
 
     <h1 class="title-text">Warehouse <small>Finder</small></h1>
     <hr>
