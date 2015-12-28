@@ -119,6 +119,7 @@ limit.keyup(function(){
 $("#clear-request").click(function(){
     $('.table-row > tr').remove()
     $("#logs").attr('hidden', true)
+    $("#clear-request").attr('disabled', true)
 })
 
 $("#search").click(function(){
