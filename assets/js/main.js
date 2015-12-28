@@ -1,6 +1,20 @@
 var url_api_base = 'api.warehouse.io/logs';
 var auth_api = 'auth_here';
 
+$(document).ready(function() {
+    $("#form-finder").attr('hidden', true);
+    $.ajax(url_api_base + 'tables', {
+        dataType: 'json',
+        success: function(json) {
+            $(".stores-select").select2({
+                data: json
+            });
+
+            $("#form-finder").fadeIn()
+        }
+    });
+});
+
 var url_api_resource = url_api_base + '/site/';
 
 var msgErrorButton = $('.msg-error');
@@ -92,6 +106,7 @@ stores.click(function(){
         stores.removeClass('has-error')
     }
 })
+
 /**
  * Valida os campos de site e level
  * @param fieldOne campo de site ou de level
