@@ -43,6 +43,9 @@ function sendFormAction() {
     }
 
     $.ajax(url, {
+        headers: {
+            'auth': auth_api
+        },
         success: function(json) {
             var trHTML = '';
             var count = 1;
