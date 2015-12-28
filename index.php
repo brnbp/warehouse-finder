@@ -30,10 +30,8 @@
 
             <div class="row">
                 <div class="form-group col-xs-7 col-md-3 col-sm-4">
-                    <select name="stores" id="stores" class="form-control">
+                    <select name="stores" id="stores" class="stores-select" style="width: 100%" hidden>
                         <option disabled selected> Choose Store</option>
-                        <option value="store_value">Store 1</option>
-                        <option value="store_value">Store 2</option>
                     </select>
                 </div>
             </div>
