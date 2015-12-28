@@ -26,7 +26,7 @@
                 <div class="msg-error-text"></div>
             </div>
         </div>
-        <form action="" method="post">
+        <form id="form-finder" >
 
             <div class="row">
                 <div class="form-group col-xs-7 col-md-3 col-sm-4">
