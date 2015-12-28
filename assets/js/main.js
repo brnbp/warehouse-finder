@@ -81,6 +81,13 @@ stores.click(function(){
     }
 })
 
+/**
+ * Valida os campos de site e level
+ * @param fieldOne campo de site ou de level
+ * @param fieldTwo campo de site ou de level
+ * @returns {boolean} retorna falso caso algum dos campos
+ * nao possua informacao, e true caso ambos campos tenham valor
+ */
 function validateRequiredFields(fieldOne, fieldTwo)
 {
     if (fieldOne.val() && fieldTwo.val()) {
@@ -101,7 +108,10 @@ function validateRequiredFields(fieldOne, fieldTwo)
     return false;
 }
 
-
+/**
+ * Valida se o valor informado em limit
+ * é numerico
+ */
 limit.keyup(function(){
     if (isNaN(parseFloat(limit.val()))) {
         msgErrorButton.attr('hidden', false)
