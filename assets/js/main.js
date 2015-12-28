@@ -1,5 +1,7 @@
-var url_api = '';
+var url_api_base = 'api.warehouse.io/logs';
 var auth_api = 'auth_here';
+
+var url_api_resource = url_api_base + '/site/';
 
 var msgErrorButton = $('.msg-error');
 msgErrorButton.attr('hidden', true);
@@ -12,7 +14,6 @@ var stores = $('#stores');
 var logName = $("#logname").val();
 var identifier = $("#identifier").val();
 var limit = $("#limit");
-
 var sendButton = $("#search");
 
 sendButton.click(sendFormAction);
@@ -26,8 +27,8 @@ function sendFormAction() {
         msgErrorButton.attr('hidden')
     }
 
-    url = url_api + '/' + stores.val()
-    url += '&level=' + level.val()
+    url = url_api_resource + stores.val()
+    url += '?level=' + level.val()
 
     if (logName) {
         url += '&log_name=' + logName
@@ -62,9 +63,6 @@ function sendFormAction() {
             $('#clear-request').attr('disabled', false);
         }
     });
-
-
-
 }
 
 // verifica se o campo esta selecionado e estava marcado como nao selecionado antes
