@@ -65,22 +65,26 @@ function sendFormAction() {
     });
 }
 
-// verifica se o campo esta selecionado e estava marcado como nao selecionado antes
-// remove estilo de erro caso esteja selecionado agora
+/**
+ * verifica se o campo esta selecionado e
+ * estava marcado como nao selecionado antes
+ * remove estilo de erro caso esteja selecionado agora
+ */
 level.click(function(){
     if (level.val() && level.hasClass('has-error')) {
         level.removeClass('has-error')
     }
 })
 
-// verifica se o campo esta selecionado e estava marcado como nao selecionado antes
-// remove estilo de erro caso esteja selecionado agora
+/**
+ * Verifica se o campo esta selecionado e estava marcado como nao selecionado antes
+ * remove estilo de erro caso esteja selecionado agora
+ */
 stores.click(function(){
     if (stores.val() && stores.hasClass('has-error')) {
         stores.removeClass('has-error')
     }
 })
-
 /**
  * Valida os campos de site e level
  * @param fieldOne campo de site ou de level
