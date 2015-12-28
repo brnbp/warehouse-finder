@@ -18,6 +18,10 @@ var sendButton = $("#search");
 
 sendButton.click(sendFormAction);
 
+/**
+ * Envia requisicao para buscar logs atraves da api Warehouse
+ * retorna uma table criada via jquery
+ */
 function sendFormAction() {
     if (!validateRequiredFields(stores, level)) {
         return;
